@@ -1,0 +1,35 @@
+
+> c(mean(trad.hue$value), mean(digital.hue$value))
+[1] 0.3621035 0.1350021
+
+> ks.test(trad.hue$value, digital.hue$value, alternative = "less")
+
+	Two-sample Kolmogorov-Smirnov test
+
+data:  trad.hue$value and digital.hue$value
+D^- = 0.6444, p-value = 7.647e-09
+alternative hypothesis: the CDF of x lies below that of y
+
+
+> c(mean(trad.saturation$value), mean(digital.saturation$value))
+[1] 0.2858759 0.2179323
+
+> ks.test(trad.saturation$value, digital.saturation$value, alternative = "less")
+
+	Two-sample Kolmogorov-Smirnov test
+
+data:  trad.saturation$value and digital.saturation$value
+D^- = 0.2444, p-value = 0.06796
+alternative hypothesis: the CDF of x lies below that of y
+
+
+> c(mean(trad.value$value), mean(digital.value$value))
+[1] 0.2943795 0.1955803
+
+> ks.test(trad.value$value, digital.value$value, alternative = "less")
+
+	Two-sample Kolmogorov-Smirnov test
+
+data:  trad.value$value and digital.value$value
+D^- = 0.3778, p-value = 0.001625
+alternative hypothesis: the CDF of x lies below that of y
